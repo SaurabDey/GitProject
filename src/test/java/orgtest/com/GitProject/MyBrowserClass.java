@@ -32,6 +32,8 @@ public class MyBrowserClass
 		password.sendKeys("12345");
 		WebElement loginBtn= driver.findElement(By.xpath("//input[@type='submit']"));
 		loginBtn.click();;
+		
+		System.out.println("Chandus Chnages");
 	}
 	
 	@AfterTest
