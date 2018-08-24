@@ -36,6 +36,7 @@ public class MyBrowserClass
 		loginBtn.click();
 		
 		System.out.println(driver.getCurrentUrl());
+		System.out.println("this is my current URL");
 	}
 	
 	@AfterTest
