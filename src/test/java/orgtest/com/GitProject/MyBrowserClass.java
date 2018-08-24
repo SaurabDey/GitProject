@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -18,6 +19,8 @@ public class MyBrowserClass
 		driver= new ChromeDriver();
 		driver.get("https://www.facebook.com");
 		driver.manage().window().maximize();
+		
+		Assert.assertEquals(driver.getTitle(), "Facebook – log in or sign up");
 	}
 	
 	@Test
