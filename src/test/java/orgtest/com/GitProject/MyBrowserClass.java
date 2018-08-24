@@ -26,12 +26,16 @@ public class MyBrowserClass
 	@Test
 	public void t()
 	{
+		Assert.assertEquals(driver.getTitle(), "Facebook – log in or sign up");
+		
 		WebElement username= driver.findElement(By.id("email"));
 		username.sendKeys("Saurab@gmail.com");
 		WebElement password= driver.findElement(By.id("pass"));
 		password.sendKeys("12345");
 		WebElement loginBtn= driver.findElement(By.xpath("//input[@type='submit']"));
-		loginBtn.click();;
+		loginBtn.click();
+		
+		System.out.println(driver.getCurrentUrl());
 	}
 	
 	@AfterTest
