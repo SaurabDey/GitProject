@@ -26,18 +26,11 @@ public class MyBrowserClass
 	@Test
 	public void t()
 	{
-		WebElement username= driver.findElement(By.id("email"));
-		username.sendKeys("Saurab@gmail.com");
-		WebElement password= driver.findElement(By.id("pass"));
-		password.sendKeys("12345");
-		WebElement loginBtn= driver.findElement(By.xpath("//input[@type='submit']"));
-		loginBtn.click();;
+		FacebookLoginPage log= new FacebookLoginPage(driver);
+		log.loginMethod();
 		
-
-		System.out.println("Saurab Chnages");
-
-		System.out.println("Chandus Chnages");
-
+//		FaceBookDashboardPage po= new FaceBookDashboardPage(driver);
+//		po.postMethd();
 	}
 	
 	@AfterTest
