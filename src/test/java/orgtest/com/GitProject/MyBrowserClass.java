@@ -24,7 +24,7 @@ public class MyBrowserClass
 	public void bt()
 	{
 		//-----ExtentHtmlReporter class
-		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("SaurabGitJenkins.html");
+		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("Resource/SaurabGitJenkins.html");
 		htmlReporter.setAppendExisting(true);
 		htmlReporter.config().setChartVisibilityOnOpen(true);
 		htmlReporter.config().setDocumentTitle("Saurab - ExtentReports");
