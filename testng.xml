@@ -6,10 +6,4 @@
       <class name="orgtest.com.GitProject.MyBrowserClass"/>
     </classes>
   </test> <!-- Test -->
-  
-   <test name="Test2">
-    <classes>
-      <class name="orgtest.com.GitProject.MyBrowserClass"/>
-    </classes>
-  </test> <!-- Test -->
 </suite> <!-- Suite -->
