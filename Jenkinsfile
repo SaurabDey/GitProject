@@ -6,7 +6,7 @@
       //git 'https://github.com/SaurabDey/GitProject.git'
     mvnHome = tool 'M3'
     checkout([$class: 'GitSCM', 
-    branches: [[name: '*/${BRANCH}']], 
+    branches: [[name: '*/somebranch']], 
     doGenerateSubmoduleConfigurations: false, 
     extensions: [], submoduleCfg: [], 
     userRemoteConfigs: [[url: 'https://github.com/SaurabDey/GitProject.git']]])
@@ -49,7 +49,7 @@ from: 'saurab.jeet@gmail.com', mimeType: 'text/html',
 subject: "Test Automation Results", 
 body: """<p>Greetings</p>
 
-<div>Test Automation execution has been completed on ${BRANCH} environment</div>
+<div>Test Automation execution has been completed on somebranch environment</div>
 <div>Execution reports: </div>
 
 
