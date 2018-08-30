@@ -33,11 +33,6 @@ public class MyBrowserClass
 		WebElement loginBtn= driver.findElement(By.xpath("//input[@type='submit']"));
 		loginBtn.click();;
 		
-
-		System.out.println("Saurab Chnages");
-
-		System.out.println("Chandus Chnages");
-
 	}
 	
 	@AfterTest
